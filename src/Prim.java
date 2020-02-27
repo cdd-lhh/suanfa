@@ -53,13 +53,13 @@ public class Prim{
              *  x指向初始点的后继结点，第一次是自己连自己，所以后继就是初始结点
              */
             x = p.y;
-            System.out.println(x);  //输出连接的后继结点
+//            System.out.println(x);  //输出连接的后继结点
             if(visited[x]) {
                 continue;
             }
             visited[x] = true;
             minimumCost += p.weight;
-            System.out.println("minimumCost" + minimumCost);
+//            System.out.println("minimumCost" + minimumCost);
 //            System.out.print(x);
             for(int i = 0; i < grahp.get(x).size(); i++){
                 if(!visited[grahp.get(x).get(i).y]){
